@@ -25,7 +25,8 @@ ext {
             testRunner      : "1.0.2",
             adxTestRunner   : "1.1.0",
             espresso        : "3.0.2",
-            adxEspresso     : "3.1.0"
+            adxEspresso     : "3.1.0",
+            adxTestExt      : "1.0.0"
     ]
 
     kotlinstd = [
@@ -120,10 +121,10 @@ ext {
     ]
 
     adxTestLib = [
-            testRunner           : "androidx.test:runner:${versions.adxTestRunner}",
             espresso             : "androidx.test.espresso:espresso-core:${versions.adxEspresso}",
             rules                : "androidx.test:rules:${versions.adxTestRunner}",
-            instrumentationRunner: "androidx.test.runner.AndroidJUnitRunner"
+            instrumentationRunner: "androidx.test.runner.AndroidJUnitRunner",
+            testext              : "androidx.test.ext:junit:${versions.adxTestExt}"
     ]
 }
 
