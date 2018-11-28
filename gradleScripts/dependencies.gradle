@@ -55,12 +55,12 @@ ext {
     ]
 
     rxjava = [
+            lib                : "io.reactivex.rxjava2:rxkotlin:${versions.rxkotlin}",
             android            : "io.reactivex.rxjava2:rxandroid:${versions.rxandroid}",
             bindings           : "com.jakewharton.rxbinding3:rxbinding:${versions.rxbindings}",
             bindingRecyclerview: "com.jakewharton.rxbinding3:rxbinding-recyclerview:${versions.rxbindings}",
             bindingCore        : "com.jakewharton.rxbinding3:rxbinding-core:${versions.rxbindings}",
             appCompat          : "com.jakewharton.rxbinding3:rxbinding-appcompat:${versions.rxbindings}",
-            kotlin             : "io.reactivex.rxjava2:rxkotlin:${versions.rxkotlin}",
             adapters           : "com.jakewharton.retrofit:retrofit2-rxjava2-adapter:${versions.rxadapters}"
     ]
 
