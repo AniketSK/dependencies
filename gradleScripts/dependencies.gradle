@@ -29,7 +29,7 @@ ext {
     ]
 
     kotlinstd = [
-            lib: "org.jetbrains.kotlin:kotlin-stdlib-jdk7:${versions.kotlin}"
+            lib: "org.jetbrains.kotlin:kotlin-stdlib-jdk8:${versions.kotlin}"
     ]
 
     constraintlayout = [
