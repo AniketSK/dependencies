@@ -23,7 +23,9 @@ ext {
             timber          : "4.6.0",
             junit           : "4.12",
             testRunner      : "1.0.2",
+            adxTestRunner   : "1.1.0",
             espresso        : "3.0.2",
+            adxEspresso     : "3.1.0"
     ]
 
     kotlinstd = [
@@ -112,8 +114,15 @@ ext {
     testlib = [
             junit     : "junit:junit:${versions.junit}",
             testRunner: "com.android.support.test:runner:${versions.testRunner}",
+            rules     : "com.android.support.test:rules:${versions.testRunner}",
             espresso  : "com.android.support.test.espresso:espresso-core:${versions.espresso}"
     ]
 
+    adxTestLib = [
+            testRunner: "androidx.test:runner:${versions.adxTestRunner}",
+            espresso  : "androidx.test.espresso:espresso-core:${versions.adxEspresso}",
+            rules     : "androidx.test:rules:${versions.adxTestRunner}"
+
+    ]
 }
 
