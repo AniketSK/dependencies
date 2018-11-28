@@ -1,96 +1,119 @@
 ext {
-    //Versions
-    versionSupportLibrary = '28.0.0'
-    versionRxjava = "2.2.2"
-    versionRxadapters = '1.0.0'
-    versionRxandroid = "2.1.0"
-    versionRxbindings = "3.0.0-alpha1"
-    versionRxkotlin = "2.2.0"
-    versionDagger = "2.19"
-    versionMockWebServer = "3.11.0"
-    versionGson = "2.8.5"
-    versionMockito = "2.23.0"
-    versionHamcrest = "1.3"
-    versionFirestore = "17.1.0"
-    versionFirebaseui = "4.1.0"
-    versionFirebaseCore = "11.8.0"
-    versionRetrofit = "2.4.0"
-    versionOkhttp = "3.11.0"
-    versionConstraintlayout = "1.1.3"
-    versionArchextensions = "1.1.1"
-    versionTimber = "4.6.0"
+    versions = [
+            kotlin          : "1.3.0",
+            supportLibrary  : "28.0.0",
+            androidx        : "1.0.2",
+            rxjava          : "2.2.2",
+            rxadapters      : '1.0.0',
+            rxandroid       : "2.1.0",
+            rxbindings      : "3.0.0-alpha1",
+            rxkotlin        : "2.2.0",
+            dagger          : "2.19",
+            mockWebServer   : "3.11.0",
+            gson            : "2.8.5",
+            mockito         : "2.23.0",
+            hamcrest        : "1.3",
+            firestore       : "17.1.0",
+            firebaseui      : "4.1.0",
+            firebaseCore    : "11.8.0",
+            retrofit        : "2.4.0",
+            okhttp          : "3.11.0",
+            constraintlayout: "1.1.3",
+            archextensions  : "1.1.1",
+            timber          : "4.6.0",
+            junit           : "4.12",
+            testRunner      : "1.0.2",
+            espresso        : "3.0.2",
+    ]
+
+    kotlinstd = [
+            lib: "org.jetbrains.kotlin:kotlin-stdlib-jdk7:${versions.kotlin}"
+    ]
 
     constraintlayout = [
-            //api
-            lib: "com.android.support.constraint:constraint-layout:$versionConstraintlayout"
+            lib: "com.android.support.constraint:constraint-layout:${versions.constraintlayout}"
+    ]
+
+    adxconstraintlayout = [
+            lib: "androidx.constraintlayout:constraintlayout:${versions.constraintlayout}"
     ]
 
     archextensions = [
-            lib: "android.arch.lifecycle:extensions:$versionArchextensions"
+            lib: "android.arch.lifecycle:extensions:${versions.archextensions}"
     ]
 
-    //Support Libraries dependencies
     supportDependencies = [
-            design           : "com.android.support:design:${versionSupportLibrary}",
-            recyclerView     : "com.android.support:recyclerview-v7:${versionSupportLibrary}",
-            cardView         : "com.android.support:cardview-v7:${versionSupportLibrary}",
-            appCompat        : "com.android.support:appcompat-v7:${versionSupportLibrary}",
-            supportAnnotation: "com.android.support:support-annotations:${versionSupportLibrary}",
+            design           : "com.android.support:design:${versions.supportLibrary}",
+            recyclerView     : "com.android.support:recyclerview-v7:${versions.supportLibrary}",
+            cardView         : "com.android.support:cardview-v7:${versions.supportLibrary}",
+            appCompat        : "com.android.support:appcompat-v7:${versions.supportLibrary}",
+            supportAnnotation: "com.android.support:support-annotations:${versions.supportLibrary}",
+    ]
+
+    androidxDependencies = [
+            appCompat: "androidx.appcompat:appcompat:${versions.androidx}"
     ]
 
     rxjava = [
-            android : "io.reactivex.rxjava2:rxandroid:${versionRxandroid}",
-            bindings: "com.jakewharton.rxbinding3:rxbinding:${versionRxbindings}",
-//            bindingRecyclerview: "com.jakewharton.rxbinding3:rxbinding-recyclerview:${versionRxbindings}",
-//            bindingCore: "com.jakewharton.rxbinding3:rxbinding-core:${versionRxbindings}",
-            kotlin  : "io.reactivex.rxjava2:rxkotlin:${versionRxkotlin}",
-            adapters: "com.jakewharton.retrofit:retrofit2-rxjava2-adapter:${versionRxadapters}"
+            android            : "io.reactivex.rxjava2:rxandroid:${versions.rxandroid}",
+            bindings           : "com.jakewharton.rxbinding3:rxbinding:${versions.rxbindings}",
+            bindingRecyclerview: "com.jakewharton.rxbinding3:rxbinding-recyclerview:${versions.rxbindings}",
+            bindingCore        : "com.jakewharton.rxbinding3:rxbinding-core:${versions.rxbindings}",
+            appCompat          : "com.jakewharton.rxbinding3:rxbinding-appcompat:${versions.rxbindings}",
+            kotlin             : "io.reactivex.rxjava2:rxkotlin:${versions.rxkotlin}",
+            adapters           : "com.jakewharton.retrofit:retrofit2-rxjava2-adapter:${versions.rxadapters}"
     ]
 
     dagger = [
-            // Dagger
-            lib                : "com.google.dagger:dagger:${versionDagger}",
-            kapt               : "com.google.dagger:dagger-compiler:${versionDagger}",
-            android            : "com.google.dagger:dagger-android:${versionDagger}",
-            support            : "com.google.dagger:dagger-android-support:${versionDagger}",
-            annotationProcessor: "com.google.dagger:dagger-android-processor:${versionDagger}",
+            lib                : "com.google.dagger:dagger:${versions.dagger}",
+            kapt               : "com.google.dagger:dagger-compiler:${versions.dagger}",
+            android            : "com.google.dagger:dagger-android:${versions.dagger}",
+            support            : "com.google.dagger:dagger-android-support:${versions.dagger}",
+            annotationProcessor: "com.google.dagger:dagger-android-processor:${versions.dagger}",
     ]
 
     mockwebserver = [
-            lib: "com.squareup.okhttp3:mockwebserver:$versionMockWebServer"
+            lib: "com.squareup.okhttp3:mockwebserver:${versions.mockWebServer}"
     ]
 
     retrofit = [
-            lib          : "com.squareup.retrofit2:retrofit:${versionRetrofit}",
-            gsonconverter: "com.squareup.retrofit2:converter-gson:${versionRetrofit}",
+            lib          : "com.squareup.retrofit2:retrofit:${versions.retrofit}",
+            gsonconverter: "com.squareup.retrofit2:converter-gson:${versions.retrofit}",
     ]
 
     gson = [
-            lib: "com.google.code.gson:gson:$versionGson"
+            lib: "com.google.code.gson:gson:${versions.gson}"
     ]
 
     mockito = [
-            lib    : "org.mockito:mockito-core:$versionMockito",
-            android: "org.mockito:mockito-android:$versionMockito"
+            lib    : "org.mockito:mockito-core:${versions.mockito}",
+            android: "org.mockito:mockito-android:${versions.mockito}"
     ]
 
     hamcrest = [
-            lib: "org.hamcrest:hamcrest-library:${versionHamcrest}"
+            lib: "org.hamcrest:hamcrest-library:${versions.hamcrest}"
     ]
 
 
 
     okhttp = [
-            lib: "com.squareup.okhttp3:okhttp:${versionOkhttp}",
-            interceptor: "com.squareup.okhttp3:logging-interceptor:${versionOkhttp}"
+            lib        : "com.squareup.okhttp3:okhttp:${versions.okhttp}",
+            interceptor: "com.squareup.okhttp3:logging-interceptor:${versions.okhttp}"
     ]
 
     timber = [
-            lib: "com.jakewharton.timber:timber:${versionTimber}"
+            lib: "com.jakewharton.timber:timber:${versions.timber}"
     ]
 
     firebase = [
-            lib: "com.google.firebase:firebase-core:${versionFirebaseCore}"
+            lib: "com.google.firebase:firebase-core:${versions.firebaseCore}"
     ]
+
+    testlib = [
+            junit     : "junit:junit:${versions.junit}",
+            testRunner: "com.android.support.test:runner:${versions.testRunner}",
+            espresso  : "com.android.support.test.espresso:espresso-core:${versions.espresso}"
+    ]
+
 }
 
