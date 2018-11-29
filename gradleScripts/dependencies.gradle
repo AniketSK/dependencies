@@ -55,8 +55,10 @@ ext {
     ]
 
     androidxDependencies = [
-            appCompat: "androidx.appcompat:appcompat:${versions.androidx}",
-            design   : "com.google.android.material:material:${versions.androidxDesign}"
+            appCompat            : "androidx.appcompat:appcompat:${versions.androidx}",
+            design               : "com.google.android.material:material:${versions.androidxDesign}",
+            recyclerViewSelection: "androidx.recyclerview:recyclerview-selection:${versions.androidxDesign}",
+            recyclerView         : " androidx.recyclerview:recyclerview:${versions.androidxDesign}"
     ]
 
     rxjava = [
