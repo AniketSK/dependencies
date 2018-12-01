@@ -29,7 +29,8 @@ ext {
             adxEspresso     : "3.1.0",
             adxTestExt      : "1.0.0",
             lifecycle       : "2.0.0",
-            navigation      : "1.0.0-alpha07"
+            navigation      : "1.0.0-alpha07",
+            jodatime        : "2.10.1"
     ]
 
     kotlinstd = [
@@ -147,6 +148,10 @@ ext {
             fragment  : "android.arch.navigation:navigation-fragment-ktx:${versions.navigation}",
             ui        : "android.arch.navigation:navigation-ui-ktx:${versions.navigation}",
             testhelper: "android.arch.navigation:navigation-testing:${versions.navigation}"
+    ]
+
+    time = [
+            lib: "net.danlew:android.joda:${versions.jodatime}"
     ]
 }
 
