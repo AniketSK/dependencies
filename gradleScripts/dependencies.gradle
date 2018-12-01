@@ -27,7 +27,9 @@ ext {
             adxTestRunner   : "1.1.0",
             espresso        : "3.0.2",
             adxEspresso     : "3.1.0",
-            adxTestExt      : "1.0.0"
+            adxTestExt      : "1.0.0",
+            lifecycle       : "2.0.0",
+            navigation      : "1.0.0-alpha07"
     ]
 
     kotlinstd = [
@@ -129,6 +131,22 @@ ext {
             rules                : "androidx.test:rules:${versions.adxTestRunner}",
             instrumentationRunner: "androidx.test.runner.AndroidJUnitRunner",
             testext              : "androidx.test.ext:junit:${versions.adxTestExt}"
+    ]
+
+    lifecycle = [
+            extensions     : "androidx.lifecycle:lifecycle-extensions:${versions.lifecycle}",
+            viewmodel      : "androidx.lifecycle:lifecycle-viewmodel-ktx:${versions.lifecycle}",
+            livedata       : "androidx.lifecycle:lifecycle-livedata:${versions.lifecycle}",
+            runtime        : "androidx.lifecycle:lifecycle-runtime:${versions.lifecycle}",
+            java8compiler  : "androidx.lifecycle:lifecycle-common-java8:${versions.lifecycle}",
+            reactivestreams: "androidx.lifecycle:lifecycle-reactivestreams-ktx:${versions.lifecycle}",
+            testhelper     : "androidx.arch.core:core-testing:${versions.lifecycle}"
+    ]
+
+    navigation = [
+            fragment  : "android.arch.navigation:navigation-fragment-ktx:${versions.navigation}",
+            ui        : "android.arch.navigation:navigation-ui-ktx:${versions.navigation}",
+            testhelper: "android.arch.navigation:navigation-testing:${versions.navigation}"
     ]
 }
 
