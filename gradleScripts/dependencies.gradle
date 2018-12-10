@@ -29,8 +29,9 @@ ext {
             adxEspresso     : "3.1.0",
             adxTestExt      : "1.0.0",
             lifecycle       : "2.0.0",
-            jodatime        : "2.10.1"
             navigation      : "1.0.0-alpha08",
+            jodatime        : "2.10.1",
+            jetifier        : "1.0.0-beta02"
     ]
 
     kotlinstd = [
@@ -152,6 +153,11 @@ ext {
 
     time = [
             lib: "net.danlew:android.joda:${versions.jodatime}"
+    ]
+
+    jetifier = [
+            classpathProcessor: "com.android.tools.build.jetifier:jetifier-processor:${versions.jetifier}",
+            core              : "com.android.tools.build.jetifier:jetifier-core:${versions.jetifier}"
     ]
 }
 
