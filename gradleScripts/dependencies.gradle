@@ -146,9 +146,10 @@ ext {
     ]
 
     navigation = [
-            fragment  : "android.arch.navigation:navigation-fragment-ktx:${versions.navigation}",
-            ui        : "android.arch.navigation:navigation-ui-ktx:${versions.navigation}",
-            testhelper: "android.arch.navigation:navigation-testing:${versions.navigation}"
+            fragment         : "android.arch.navigation:navigation-fragment-ktx:${versions.navigation}",
+            ui               : "android.arch.navigation:navigation-ui-ktx:${versions.navigation}",
+            testhelper       : "android.arch.navigation:navigation-testing:${versions.navigation}",
+            classPathSafeArgs: "android.arch.navigation:navigation-safe-args-gradle-plugin:${versions.navigation}"
     ]
 
     time = [
