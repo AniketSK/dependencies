@@ -31,7 +31,8 @@ ext {
             lifecycle       : "2.0.0",
             navigation      : "1.0.0-alpha08",
             jodatime        : "2.10.1",
-            jetifier        : "1.0.0-beta02"
+            jetifier        : "1.0.0-beta02",
+            room            : "2.1.0-alpha03"
     ]
 
     kotlinstd = [
@@ -148,6 +149,13 @@ ext {
             ui               : "android.arch.navigation:navigation-ui-ktx:${versions.navigation}",
             testhelper       : "android.arch.navigation:navigation-testing:${versions.navigation}",
             classPathSafeArgs: "android.arch.navigation:navigation-safe-args-gradle-plugin:${versions.navigation}"
+    ]
+
+    room = [
+            lib     : "androidx.room:room-runtime:${versions.room}",
+            compiler: "androidx.room:room-compiler:${versions.room}",
+            rxjava  : "androidx.room:room-rxjava2:${versions.room}",
+            test    : "androidx.room:room-testing:${versions.room}"
     ]
 
     time = [
