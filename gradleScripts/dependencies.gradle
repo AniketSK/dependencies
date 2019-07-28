@@ -6,7 +6,6 @@ ext {
             androidxDesign   : "1.0.0",
             rxjava           : "2.2.10",
             leakcanary      : "1.6.3",
-            rxadapters       : '1.0.0',
             rxandroid        : "2.1.1",
             rxbindings       : "3.0.0-alpha2",
             rxkotlin         : "2.3.0",
@@ -90,7 +89,6 @@ ext {
             bindingRecyclerview: "com.jakewharton.rxbinding3:rxbinding-recyclerview:${versions.rxbindings}",
             bindingCore        : "com.jakewharton.rxbinding3:rxbinding-core:${versions.rxbindings}",
             appCompat          : "com.jakewharton.rxbinding3:rxbinding-appcompat:${versions.rxbindings}",
-            adapters           : "com.jakewharton.retrofit:retrofit2-rxjava2-adapter:${versions.rxadapters}"
     ]
 
     dagger = [
@@ -108,6 +106,7 @@ ext {
     retrofit = [
             lib          : "com.squareup.retrofit2:retrofit:${versions.retrofit}",
             gsonconverter: "com.squareup.retrofit2:converter-gson:${versions.retrofit}",
+            adapters     : "com.squareup.retrofit2:adapter-rxjava2:${versions.retrofit}"
     ]
 
     gson = [
