@@ -50,6 +50,7 @@ ext {
             rxrelay           : "2.1.0",
             uiautomator       : "2.2.0",
             jraskalivedatatest: "1.1.0",
+            idlingResources   : "1.0.0"
     ]
 
     glide = [
@@ -255,6 +256,10 @@ ext {
 
     livedataCommunityTestHelper = [
             lib: "com.jraska.livedata:testing-ktx:${versions.jraskalivedatatest}"
+    ]
+
+    externalIdlingResources = [
+            okhttp: "com.jakewharton.espresso:okhttp3-idling-resource:${versions.idlingResources}"
     ]
 }
 
