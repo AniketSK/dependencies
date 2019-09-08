@@ -50,7 +50,12 @@ ext {
             rxrelay           : "2.1.0",
             uiautomator       : "2.2.0",
             jraskalivedatatest: "1.1.0",
-            idlingResources   : "1.0.0"
+            idlingResources   : "1.0.0",
+            guava             : "28.1-jre"
+    ]
+
+    guava = [
+            lib: "com.google.guava:guava:${versions.guava}"
     ]
 
     glide = [
