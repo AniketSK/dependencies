@@ -2,12 +2,12 @@ Dependency list that's going to be imported into whatever project is being used.
 
 To use:
 In the `buildscript` block at your project level build.gradle, add:
-`apply from: 'gradleScripts/dependencies.gradle'`
+`apply from: 'dependencies/dependencies.gradle'`
 
 such as:
 `
 buildscript {
-    apply from: 'gradleScripts/dependencies.gradle'
+    apply from: 'dependencies/dependencies.gradle'
     .
     .
     .
