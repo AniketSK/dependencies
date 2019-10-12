@@ -52,7 +52,12 @@ ext {
             jraskalivedatatest: "1.1.0",
             idlingResources   : "1.0.0",
             guava             : "28.1-jre",
-            gms               : "17.0.0"
+            gms               : "17.0.0",
+            legacySupport     : "1.0.0",
+    ]
+
+    legacySupport = [
+            lib: "androidx.legacy:legacy-support-v4:${versions.legacySupport}"
     ]
 
     gms = [
