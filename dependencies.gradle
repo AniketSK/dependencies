@@ -55,6 +55,17 @@ ext {
             gms               : "17.0.0",
             legacySupport     : "1.0.0",
             arrow             : "0.10.0",
+            workmanager       : "2.2.0",
+    ]
+
+    workmanager = [
+            // Kotlin + coroutines
+            kotlincoroutines: "androidx.work:work-runtime-ktx:${versions.workmanager}",
+
+            // optional - RxJava2 support
+            rxjava          : "androidx.work:work-rxjava2:${versions.workmanager}",
+            // test support
+            test            : "androidx.work:work-testing:${versions.workmanager}",
     ]
 
     arrow = [
