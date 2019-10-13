@@ -54,6 +54,14 @@ ext {
             guava             : "28.1-jre",
             gms               : "17.0.0",
             legacySupport     : "1.0.0",
+            arrow             : "0.10.0",
+    ]
+
+    arrow = [
+            core   : "io.arrow-kt:arrow-core:${versions.arrow}",
+            syntax : "io.arrow-kt:arrow-syntax:${versions.arrow}",
+            meta   : "io.arrow-kt:arrow-meta:${versions.arrow}",
+            effects: "io.arrow-kt:arrow-fx:${versions.arrow}",
     ]
 
     legacySupport = [
