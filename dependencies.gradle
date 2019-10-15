@@ -17,7 +17,7 @@ ext {
             mockk             : "1.9.2",
             hamcrest          : "1.3",
             firebaseAuth      : "19.1.0",
-            firebaseui        : "4.1.0",
+            firebaseui        : "6.0.2",
             firebaseCore      : "21.1.1",
             retrofit          : "2.6.0",
             okhttp            : "4.0.1",
@@ -225,6 +225,12 @@ ext {
             lib  : "com.google.firebase:firebase-core:${versions.firebaseCore}",
             store: "com.google.firebase:firebase-firestore:${versions.firebaseCore}",
             auth : "com.google.firebase:firebase-auth:${versions.firebaseAuth}"
+    ]
+
+    firebaseUi = [
+            store: "com.firebaseui:firebase-ui-firestore:${versions.firebaseui}",
+            // FirebaseUI for Firebase Auth
+            auth : "com.firebaseui:firebase-ui-auth:${versions.firebaseui}"
     ]
 
     testlib = [
