@@ -56,8 +56,13 @@ ext {
             legacySupport     : "1.0.0",
             arrow             : "0.10.0",
             workmanager       : "2.2.0",
+            kotlinimmutable   : "0.3",
     ]
 
+    kotlinimmutable = [
+            lib: "org.jetbrains.kotlinx:kotlinx-collections-immutable:${versions.kotlinimmutable}",
+
+    ]
     workmanager = [
             // Kotlin + coroutines
             kotlincoroutines: "androidx.work:work-runtime-ktx:${versions.workmanager}",
