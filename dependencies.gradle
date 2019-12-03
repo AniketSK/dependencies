@@ -34,7 +34,7 @@ ext {
             navigation        : "2.2.0-beta01",
             jodatime          : "2.10.2",
             jetifier          : "1.0.0-beta05",
-            room              : "2.2.1",
+            room              : "2.2.2",
             detekt            : "1.0.0-RC15",
             realm             : "5.1.0",
             realmGradlePlugin : "5.13.0",
