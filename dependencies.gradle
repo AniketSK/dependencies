@@ -61,11 +61,21 @@ ext {
             viewpager2        : "1.0.0",
             androidXFragment  : "1.2.0-rc03",
             maps              : "17.0.0",
+            gradle            : "3.5.3",
+            googleServices    : "4.3.3",
+    ]
+
+    googleServices = [
+            classpath: "com.google.gms:google-services:${versions.googleServices}"
+    ]
+
+    gradlePlugin = [
+            classpath: "com.android.tools.build:gradle:${versions.gradle}",
     ]
 
     kotlinSerialization = [
-            runtime: "org.jetbrains.kotlinx:kotlinx-serialization-runtime:0.14.0",
-            classpath : "org.jetbrains.kotlin:kotlin-serialization:${versions.kotlin}"
+            runtime  : "org.jetbrains.kotlinx:kotlinx-serialization-runtime:0.14.0",
+            classpath: "org.jetbrains.kotlin:kotlin-serialization:${versions.kotlin}"
     ]
 
     gPlayServices = [
