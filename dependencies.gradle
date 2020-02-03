@@ -30,8 +30,9 @@ ext {
             espresso          : "3.2.0",
             adxEspresso       : "3.2.0",
             adxTestExt        : "1.1.1",
-            lifecycle         : "2.1.0",
-            navigation        : "2.2.0-rc03",
+            lifecycle         : "2.2.0",
+            lifecycleTesting  : "2.1.0",
+            navigation        : "2.2.0",
             jodatime          : "2.10.2",
             jetifier          : "1.0.0-beta05",
             room              : "2.2.2",
@@ -304,7 +305,7 @@ ext {
             runtime        : "androidx.lifecycle:lifecycle-runtime:${versions.lifecycle}",
             java8compiler  : "androidx.lifecycle:lifecycle-common-java8:${versions.lifecycle}",
             reactivestreams: "androidx.lifecycle:lifecycle-reactivestreams-ktx:${versions.lifecycle}",
-            testhelper     : "androidx.arch.core:core-testing:${versions.lifecycle}"
+            testhelper     : "androidx.arch.core:core-testing:${versions.lifecycleTesting}"
     ]
 
     navigation = [
