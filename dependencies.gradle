@@ -80,7 +80,8 @@ ext {
     ]
 
     gPlayServices = [
-            maps: "com.google.android.gms:play-services-maps:${versions.maps}"
+            maps: "com.google.android.gms:play-services-maps:${versions.maps}",
+            instantApps: "com.google.android.gms:play-services-instantapps:${versions.gms}"
     ]
 
     androidXFragment = [
