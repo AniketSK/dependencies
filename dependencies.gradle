@@ -39,7 +39,7 @@ ext {
             detekt            : "1.5.0",
             realm             : "5.1.0",
             realmGradlePlugin : "5.13.0",
-            ktx               : "1.1.0",
+            ktx               : "1.2.0",
             autodispose       : "1.4.0",
             paging            : "2.1.1",
             multidex          : "2.0.1",
@@ -62,7 +62,7 @@ ext {
             viewpager2        : "1.0.0",
             androidXFragment  : "1.2.0",
             maps              : "17.0.0",
-            gradle            : '3.6.0',
+            gradle            : '3.6.1',
             googleServices    : "4.3.3",
     ]
 
