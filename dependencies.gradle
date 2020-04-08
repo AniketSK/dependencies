@@ -62,7 +62,7 @@ ext {
             viewpager2        : "1.0.0",
             androidXFragment  : "1.2.0",
             maps              : "17.0.0",
-            gradle            : '3.6.1',
+            gradle            : '3.6.2',
             googleServices    : "4.3.3",
     ]
 
