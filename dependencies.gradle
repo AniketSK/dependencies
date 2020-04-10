@@ -10,7 +10,7 @@ ext {
             rxandroid         : "2.1.1",
             rxbindings        : "3.1.0",
             rxkotlin          : "2.4.0",
-            dagger            : "2.24",
+            dagger            : "2.27",
             mockWebServer     : "4.3.1",
             gson              : "2.8.6",
             mockito           : "3.0.0",
