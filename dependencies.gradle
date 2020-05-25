@@ -1,7 +1,7 @@
 ext {
 
     versions = [
-            kotlin            : "1.3.71",
+            kotlin            : "1.3.72",
             supportLibrary    : "28.0.0",
             androidx          : "1.1.0",
             androidxDesign    : "1.1.0-rc02",
@@ -62,8 +62,9 @@ ext {
             viewpager2        : "1.0.0",
             androidXFragment  : "1.2.0",
             maps              : "17.0.0",
-            gradle            : '3.6.2',
+            gradle            : '3.6.3',
             googleServices    : "4.3.3",
+            compose            : "0.1.0-dev11",
     ]
 
     googleServices = [
@@ -302,11 +303,12 @@ ext {
             extensions     : "androidx.lifecycle:lifecycle-extensions:${versions.lifecycle}",
             viewmodel      : "androidx.lifecycle:lifecycle-viewmodel-ktx:${versions.lifecycle}",
             kotlinCompiler : "androidx.lifecycle:lifecycle-compiler:${versions.lifecycle}",
-            livedata       : "androidx.lifecycle:lifecycle-livedata:${versions.lifecycle}",
+            livedata       : "androidx.lifecycle:lifecycle-livedata-ktx:${versions.lifecycle}",
             runtime        : "androidx.lifecycle:lifecycle-runtime:${versions.lifecycle}",
             java8compiler  : "androidx.lifecycle:lifecycle-common-java8:${versions.lifecycle}",
             reactivestreams: "androidx.lifecycle:lifecycle-reactivestreams-ktx:${versions.lifecycle}",
-            testhelper     : "androidx.arch.core:core-testing:${versions.lifecycleTesting}"
+            testhelper     : "androidx.arch.core:core-testing:${versions.lifecycleTesting}",
+            savedState     : "androidx.lifecycle:lifecycle-viewmodel-savedstate:${versions.lifecycle}"
     ]
 
     navigation = [
@@ -349,6 +351,17 @@ ext {
     externalIdlingResources = [
             okhttp: "com.jakewharton.espresso:okhttp3-idling-resource:${versions.idlingResources}"
     ]
+
+    jetpackCompose = [
+            // https://mvnrepository.com/artifact/androidx.compose/compose-runtime
+            runtime : "androidx.compose:compose-runtime:${versions.compose}",
+            framework: "androidx.ui:ui-framework:${versions.compose}",
+            tooling : "androidx.ui:ui-tooling:${versions.compose}",
+            layout: "androidx.ui:ui-tooling:${versions.compose}",
+            material: "androidx.ui:ui-tooling:${versions.compose}",
+    ]
+
+
 }
 
 
