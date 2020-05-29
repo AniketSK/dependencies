@@ -52,7 +52,7 @@ ext {
             uiautomator       : "2.2.0",
             jraskalivedatatest: "1.1.1",
             idlingResources   : "1.0.0",
-            guava             : "28.2-jre",
+            guava             : "29.0-android",
             gms               : "17.0.0",
             legacySupport     : "1.0.0",
             arrow             : "0.10.4",
