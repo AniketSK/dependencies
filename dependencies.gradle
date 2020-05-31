@@ -24,7 +24,7 @@ ext {
             okhttp            : "4.7.2",
             constraintlayout  : "2.0.0-beta6",
             timber            : "4.7.1",
-            junit             : "4.12",
+            junit             : "4.13",
             testRunner        : "1.2.0",
             adxTestRunner     : "1.2.0",
             espresso          : "3.2.0",
