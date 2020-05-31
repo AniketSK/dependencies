@@ -192,10 +192,6 @@ ext {
             lib: "androidx.constraintlayout:constraintlayout:${versions.constraintlayout}"
     ]
 
-    archextensions = [
-            lib: "android.arch.lifecycle:extensions:${versions.archextensions}"
-    ]
-
     supportDependencies = [
             design           : "com.android.support:design:${versions.supportLibrary}",
             recyclerView     : "com.android.support:recyclerview-v7:${versions.supportLibrary}",
