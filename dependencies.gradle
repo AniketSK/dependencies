@@ -11,6 +11,7 @@ ext {
             rxbindings        : "3.1.0",
             rxkotlin          : "2.4.0",
             dagger            : "2.28",
+            koin              : "2.1.5",
             mockWebServer     : "4.3.1",
             gson              : "2.8.6",
             moshi             : "1.9.2",
@@ -223,6 +224,20 @@ ext {
             android                   : "com.google.dagger:dagger-android:${versions.dagger}",
             support                   : "com.google.dagger:dagger-android-support:${versions.dagger}",
             androidAnnotationProcessor: "com.google.dagger:dagger-android-processor:${versions.dagger}",
+    ]
+
+    koin = [
+            // Koin for Kotlin
+            lib      : "org.koin:koin-core:${versions.koin}",
+            // Koin for Android
+            android  : "org.koin:koin-android:${versions.koin}",
+            // Koin Extended & experimental features
+            extended : "org.koin:koin-core-ext:${versions.koin}",
+            // Koin for Android - Scope feature
+            // include koin-android-scope & koin-android
+            viewmodel: "org.koin:koin-android-viewmodel:${versions.koin}",
+            // Koin for Unit tests
+            test     : "org.koin:koin-test:${versions.koin}"
     ]
 
     mockwebserver = [
