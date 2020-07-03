@@ -71,6 +71,12 @@ ext {
             compose           : "0.1.0-dev12",
             kotlinCompose     : "1.3.70",
             kotlinComposeExt  : "1.3.70-dev-withExperimentalGoogleExtensions-20200424",
+            gifycat           : "0.7.+"
+    ]
+
+    gifycat = [
+            lib   : "com.gfycat.android:gfycat-core:${versions.gifycat}",
+            picker: "com.gfycat.android:gfycat-picker:${versions.gifycat}"
     ]
 
     daggerhilt = [
