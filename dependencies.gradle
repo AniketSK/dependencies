@@ -68,8 +68,14 @@ ext {
             gradle            : '4.0.0',
             googleServices    : "4.3.3",
             compose           : "0.1.0-dev12",
-            kotlinCompose:"1.3.70",
-            kotlinComposeExt:"1.3.70-dev-withExperimentalGoogleExtensions-20200424",
+            kotlinCompose     : "1.3.70",
+            kotlinComposeExt  : "1.3.70-dev-withExperimentalGoogleExtensions-20200424",
+    ]
+
+    hilt = [
+            lib     : "com.google.dagger:hilt-android:${versions.hilt}",
+            compiler: "com.google.dagger:hilt-android-compiler:${versions.hilt}",
+            test    : "com.google.dagger:hilt-android-testing:${versions.hilt}"
     ]
 
     googleServices = [
@@ -382,11 +388,11 @@ ext {
     ]
 
     jetpackCompose = [
-            runtime : "androidx.compose:compose-runtime:${versions.compose}",
+            runtime  : "androidx.compose:compose-runtime:${versions.compose}",
             framework: "androidx.ui:ui-framework:${versions.compose}",
-            tooling : "androidx.ui:ui-tooling:${versions.compose}",
-            layout: "androidx.ui:ui-layout:${versions.compose}",
-            material: "androidx.ui:ui-material:${versions.compose}",
+            tooling  : "androidx.ui:ui-tooling:${versions.compose}",
+            layout   : "androidx.ui:ui-layout:${versions.compose}",
+            material : "androidx.ui:ui-material:${versions.compose}",
     ]
 
 
