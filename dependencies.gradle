@@ -35,7 +35,7 @@ ext {
             adxTestExt        : "1.1.1",
             lifecycle         : "2.2.0",
             lifecycleTesting  : "2.1.0",
-            navigation        : "2.2.0",
+            navigation        : "2.3.0",
             jodatime          : "2.10.3",
             jetifier          : "1.0.0-beta08",
             room              : "2.2.3",
