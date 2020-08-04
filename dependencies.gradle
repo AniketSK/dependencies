@@ -79,7 +79,7 @@ ext {
             realmAdapters     : "3.1.0",
     ]
 
-    realm = [
+    realmLibs = [
             classpath: "io.realm:realm-gradle-plugin:${versions.realmPlugin}",
             adapters : "io.realm:android-adapters:${versions.realmAdapters}"
     ]
